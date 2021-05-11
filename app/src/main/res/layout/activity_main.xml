@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/loadProgress"
+        android:indeterminate="true"
+        android:layout_below="@id/homeButton"
+        android:visibility="gone"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Mail"
+        android:id="@+id/mailButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@color/secondaryColor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="8dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/homeButton"
+        android:layout_alignParentTop="true"
+        android:text="Trainer-Module"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:padding="12dp"
+
+        />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@color/secondaryColor"
+        android:drawableLeft="@drawable/ic_baseline_home_24"
+        android:drawableTint="@color/secondaryColor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_baseline_home_24"
+        android:tint="@color/secondaryColor"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mailButton"
+        android:id="@+id/dataList"
+
+        />
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:text="Graph"
+    android:id="@+id/graphButton"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+    android:textColor="@color/white"
+    />
+
+
+</RelativeLayout>

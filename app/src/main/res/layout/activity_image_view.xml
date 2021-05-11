@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageView">
+<ImageButton
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:id="@+id/refresh"
+    android:layout_alignParentRight="true"
+    android:layout_margin="16dp"
+    android:src="@drawable/ic_baseline_refresh_24"
+    android:tint="@color/secondaryColor"
+    android:background="?selectableItemBackgroundBorderless"
+    />
+    <ProgressBar
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/progress_circular"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="28dp"
+        android:tint="@color/secondaryColor"
+        android:background="?selectableItemBackgroundBorderless"
+        />
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/imageview"
+    />
+</RelativeLayout>
